@@ -1,0 +1,32 @@
+# ---------Obtener todas las notas
+GET http://127.0.0.1:8000/api/notas
+Content-Type: application/json
+
+###
+
+# Registrar una nueva nota
+POST http://127.0.0.1:8000/api/notas
+Content-Type: application/json
+
+{
+  "actividad": "Examen 1",
+  "nota": 4.5,
+  "codEstudiante": 1
+}
+
+###
+
+# Actualizar una nota
+PUT http://127.0.0.1:8000/api/notas/1
+Content-Type: application/json
+
+{
+  "actividad": "Examen Final",
+  "nota": 4.8
+}
+
+###
+
+# Eliminar una nota
+DELETE http://127.0.0.1:8000/api/notas/1
+Content-Type: application/json

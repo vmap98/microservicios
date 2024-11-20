@@ -1,0 +1,25 @@
+### Endpoint para obtener la lista de estudiantes
+GET http://127.0.0.1:8000/api/app/estudiantes
+Accept: application/json
+
+### Endpoint para crear un nuevo estudiante
+POST http://127.0.0.1:8000/api/app/estudiante
+Content-Type: application/json
+
+{
+    "nombres": "Juan Pérez",
+    "email": "juan.perez@example.com"
+}
+
+### Endpoint para actualizar un estudiante
+PUT http://127.0.0.1:8000/api/app/estudiantes/1
+Content-Type: application/json
+
+{
+    "nombres": "Juan Pérez Actualizado",
+    "email": "juan.perez.updated@example.com"
+}
+
+### Endpoint para eliminar un estudiante
+DELETE http://127.0.0.1:8000/api/app/estudiantes/1
+Accept: application/json
